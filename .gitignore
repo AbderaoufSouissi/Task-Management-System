@@ -1,0 +1,39 @@
+# === Global ===
+*.log
+*.tmp
+*.swp
+*.bak
+*.env
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Backend: Spring Boot ===
+/task-manager-api/target/
+/task-manager-api/.classpath
+/task-manager-api/.project
+/task-manager-api/.settings/
+/task-manager-api/.idea/
+/task-manager-api/*.iml
+
+# Maven Wrapper
+/task-manager-api/.mvn/
+/task-manager-api/mvnw
+/task-manager-api/mvnw.cmd
+
+# IntelliJ
+*.iws
+*.iml
+*.ipr
+/task-manager-api/.idea/
+.task-manager-api/.vscode/
+
+# === Frontend: React + Vite + TypeScript ===
+/task-manager-client/node_modules/
+/task-manager-client/dist/
+/task-manager-client/.env
+/task-manager-client/.env.local
+/task-manager-client/.env.*.local
+/task-manager-client/.vite/
+.task-manager-client/.vscode/
