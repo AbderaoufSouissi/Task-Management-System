@@ -16,7 +16,7 @@ Desktop.ini
 /task-manager-api/.settings/
 /task-manager-api/.idea/
 /task-manager-api/*.iml
-/task-manager-api/application-dev.yml
+/task-manager-api/src/main/resources/application-dev.yml
 
 # Maven Wrapper
 /task-manager-api/.mvn/
