@@ -29,7 +29,7 @@ public class JwtUtils {
 
 
 
-    private String generateToken(String username) {
+    public String generateToken(String username) {
         return Jwts.builder()
                 .subject(username)
                 .issuedAt(new Date(System.currentTimeMillis()))
