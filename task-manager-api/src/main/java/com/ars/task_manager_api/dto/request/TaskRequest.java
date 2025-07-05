@@ -11,6 +11,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -39,5 +41,5 @@ public class TaskRequest {
 
     @NotNull
     @FutureOrPresent(message = "Due date must be Today or a future date")
-    private LocalDateTime dueDate;
+    private LocalDate dueDate;
 }

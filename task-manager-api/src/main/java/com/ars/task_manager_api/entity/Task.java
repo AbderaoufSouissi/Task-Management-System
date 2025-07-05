@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -34,7 +35,7 @@ public class Task {
     private Priority priority;
 
     @Column(nullable = false)
-    private LocalDateTime dueDate;
+    private LocalDate dueDate;
 
     @Column(updatable = false)
     private LocalDateTime createdAt;
