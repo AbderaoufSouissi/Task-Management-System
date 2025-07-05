@@ -86,6 +86,8 @@ public class TaskServiceImpl implements TaskService {
         if(null != task.getDueDate()) task.setDueDate(taskRequest.getDueDate());
         if(null != task.getCompleted()) task.setCompleted(taskRequest.getCompleted());
         if(null != task.getUser()) task.setUser(task.getUser());
+
+        taskRepository.save(task);
         return Response.<Task>builder()
                 .statusCode(HttpStatus.OK.value())
                 .message("Task updated successfully")
