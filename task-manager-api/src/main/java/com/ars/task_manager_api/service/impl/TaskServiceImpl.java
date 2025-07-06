@@ -118,7 +118,7 @@ public class TaskServiceImpl implements TaskService {
         List<Task> tasks = taskRepository.findByCompletedAndUser(completed, loggedInUser);
         return Response.<List<Task>>builder()
                 .statusCode(HttpStatus.OK.value())
-                .message("Tasks filtered by completion status for user")
+                .message("Tasks filtered by completion status for user with username : "+ loggedInUser.getUsername())
                 .data(tasks)
                 .build();
     }
